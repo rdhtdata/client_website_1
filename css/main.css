@@ -3,7 +3,7 @@
    High-End Contemporary Dance Academy & Creative Hub
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Syne:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 :root {
   /* 2026 Architectural Color System */
@@ -46,9 +46,9 @@
   --border-dark-strong: rgba(255, 255, 255, 0.18);
   --border-dark-glow: rgba(229, 169, 16, 0.3);
 
-  /* Typography */
-  --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-editorial: 'Cinzel', serif;
+  /* Unified 2026 Editorial Typography */
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Spatial Scale */
@@ -134,8 +134,8 @@ body::before {
 }
 
 .section {
-  padding-top: clamp(72px, 9vw, 128px);
-  padding-bottom: clamp(72px, 9vw, 128px);
+  padding-top: clamp(72px, 8vw, 112px);
+  padding-bottom: clamp(72px, 8vw, 112px);
   position: relative;
 }
 
@@ -164,19 +164,19 @@ body::before {
   color: var(--text-dark-primary);
 }
 
-/* Editorial Typography */
+/* Harmonious Editorial Typography System */
 h1, h2, h3, h4, .font-display {
   font-family: var(--font-display);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.035em;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
   text-wrap: balance;
 }
 
-.font-editorial {
-  font-family: var(--font-editorial);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+.font-serif, .font-editorial {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 p {
@@ -184,18 +184,19 @@ p {
 }
 
 .section-title {
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-family: var(--font-display);
+  font-size: clamp(2.0rem, 3.8vw, 3.0rem);
   font-weight: 800;
-  line-height: 1.04;
-  letter-spacing: -0.04em;
-  margin-bottom: var(--space-4);
-  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-3);
+  text-transform: capitalize;
 }
 
 .section-subtitle {
-  font-size: clamp(1rem, 1.6vw, 1.15rem);
-  line-height: 1.68;
-  max-width: 620px;
+  font-size: clamp(0.98rem, 1.4vw, 1.1rem);
+  line-height: 1.65;
+  max-width: 580px;
   font-weight: 400;
 }
 
@@ -216,10 +217,10 @@ p {
   align-items: center;
   gap: var(--space-2);
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   margin-bottom: var(--space-3);
   color: var(--accent);
 }

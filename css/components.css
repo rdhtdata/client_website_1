@@ -291,18 +291,19 @@
 }
 
 .about-statement {
-  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.0vw, 2.4rem);
   font-weight: 800;
-  line-height: 1.12;
+  line-height: 1.15;
   margin-bottom: var(--space-4);
   color: var(--text-dark-primary);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
 }
 
 .about-text {
-  font-size: 1.02rem;
+  font-size: 0.98rem;
   color: var(--text-dark-secondary);
-  line-height: 1.72;
+  line-height: 1.7;
   margin-bottom: var(--space-4);
 }
 
@@ -344,6 +345,9 @@
   background-color: var(--surface-light-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xs);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   transition: transform var(--transition-fast), border-color var(--transition-fast);
 }
 
@@ -354,24 +358,25 @@
 
 .pillar-number {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 800;
   color: var(--accent-dark);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   margin-bottom: var(--space-2);
   display: block;
 }
 
 .pillar-title {
-  font-size: 1.15rem;
+  font-family: var(--font-display);
+  font-size: 1.12rem;
   font-weight: 700;
   margin-bottom: var(--space-2);
   color: var(--text-dark-primary);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
 }
 
 .pillar-desc {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: var(--text-dark-secondary);
   line-height: 1.6;
 }
@@ -398,7 +403,7 @@
 }
 
 .pathway-item {
-  padding: 28px 24px;
+  padding: 26px 22px;
   background-color: var(--surface-light);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xs);
@@ -416,24 +421,25 @@
 
 .pathway-tag {
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   color: var(--accent-dark);
   margin-bottom: var(--space-2);
   display: block;
 }
 
 .pathway-title {
-  font-size: 1.22rem;
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
   color: var(--text-dark-primary);
   margin-bottom: var(--space-2);
   letter-spacing: -0.02em;
 }
 
 .pathway-desc {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: var(--text-dark-secondary);
   line-height: 1.6;
   margin-bottom: var(--space-4);
@@ -445,7 +451,7 @@
    -------------------------------------------------------------------------- */
 .experience-banner {
   position: relative;
-  height: clamp(320px, 45vh, 460px);
+  height: clamp(320px, 45vh, 440px);
   border-radius: var(--radius-xs);
   overflow: hidden;
   margin-bottom: var(--space-5);
@@ -491,18 +497,21 @@
   background-color: var(--surface-light);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xs);
+  display: flex;
+  flex-direction: column;
 }
 
 .facility-title {
-  font-size: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
   font-weight: 700;
   color: var(--text-dark-primary);
   margin-bottom: var(--space-2);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
 }
 
 .facility-desc {
-  font-size: 0.86rem;
+  font-size: 0.85rem;
   color: var(--text-dark-secondary);
   line-height: 1.6;
 }
@@ -561,15 +570,16 @@
 }
 
 .instructor-name {
-  font-size: 1.2rem;
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
   color: var(--text-dark-primary);
   margin-bottom: 4px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
 }
 
 .instructor-role {
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -578,7 +588,7 @@
 }
 
 .instructor-bio {
-  font-size: 0.86rem;
+  font-size: 0.85rem;
   color: var(--text-dark-secondary);
   line-height: 1.6;
 }
@@ -594,9 +604,9 @@
 }
 
 .schedule-tab-btn {
-  padding: 12px 24px;
+  padding: 11px 22px;
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -629,7 +639,7 @@
 .schedule-row {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 20px;
+  padding: 18px 20px;
   border-bottom: 1px solid var(--border-light);
   align-items: center;
   gap: var(--space-2);
@@ -641,28 +651,30 @@
 
 @media (min-width: 768px) {
   .schedule-row {
-    grid-template-columns: 160px 1.5fr 1fr 140px;
+    grid-template-columns: 150px 1.5fr 1fr 130px;
     gap: var(--space-4);
-    padding: 20px 28px;
+    padding: 18px 24px;
   }
 }
 
 .schedule-time {
-  font-weight: 800;
-  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.88rem;
   color: var(--accent-dark);
   letter-spacing: 0.02em;
 }
 
 .schedule-title {
-  font-size: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-dark-primary);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
 }
 
 .schedule-batch-tag {
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   color: var(--text-dark-secondary);
   margin-top: 2px;
 }
@@ -683,10 +695,11 @@
   background: var(--surface-light-card);
   border: 1px solid var(--border-light-strong);
   border-radius: var(--radius-pill);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: var(--text-dark-primary);
   margin-bottom: var(--space-3);
+  letter-spacing: 0.04em;
 }
 
 .reviews-stars-gold {
@@ -758,7 +771,7 @@
 
 .review-card-stars {
   color: #F59E0B;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   letter-spacing: 2px;
 }
 
@@ -771,11 +784,11 @@
 }
 
 .review-quote-text {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-dark-secondary);
   line-height: 1.65;
   margin-bottom: var(--space-4);
-  font-style: italic;
+  font-style: normal;
 }
 
 .reviewer-row {
@@ -785,21 +798,21 @@
 }
 
 .reviewer-avatar {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background-color: var(--surface-light-card);
   border: 1px solid var(--border-light-strong);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 800;
   color: var(--text-dark-primary);
 }
 
 .reviewer-name {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 700;
   color: var(--text-dark-primary);
 }
@@ -849,14 +862,15 @@
 }
 
 .branch-title {
-  font-size: 1.6rem;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
   font-weight: 800;
   color: var(--text-dark-primary);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
 }
 
 .branch-sub {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: var(--text-dark-secondary);
 }
 
@@ -882,9 +896,9 @@
 }
 
 .branch-detail-val {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: var(--text-dark-primary);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .branch-map-embed {
@@ -904,6 +918,52 @@
 
 .branch-actions {
   display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   9.5. FINAL CALL TO ACTION
+   -------------------------------------------------------------------------- */
+.final-cta {
+  background-color: var(--bg-dark-alt);
+  color: var(--text-light-primary);
+  border-top: 1px solid var(--border-dark);
+  padding: clamp(72px, 8vw, 112px) 0;
+  text-align: center;
+  position: relative;
+}
+
+.final-cta-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final-cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-3);
+  color: var(--text-light-primary);
+}
+
+.final-cta-sub {
+  font-size: clamp(1.0rem, 1.4vw, 1.15rem);
+  color: var(--text-light-secondary);
+  line-height: 1.65;
+  margin-bottom: var(--space-6);
+  max-width: 540px;
+}
+
+.final-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: var(--space-3);
   flex-wrap: wrap;
 }
